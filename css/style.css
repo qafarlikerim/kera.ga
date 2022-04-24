@@ -1,8 +1,8 @@
 body {background-color: #eff0f3!important}
 
 .container {
-margin-top: 50px;
-width: 25%!important;
+   margin-top: 50px;
+   width: 25%!important;
 }
 
 from {
@@ -15,5 +15,5 @@ from {
 #task {
    width: 60%;
    float: left;
-   margin-right: 5%;
+   margin-right: 20%;
 }
