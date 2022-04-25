@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Список контактов</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
     <h1>список контактов</h1>
     <form action="/add.php" method="post">
-      <input type="text" name="task" id="task" placeholder="нужно сделать.." class="from-control">
+      <input type="text" name="task" id="task" placeholder="нужно сделать.." class="form-control">
       <butoon type="submit" name="sendTask" class="btn btn-succes">отправить</button>
     </form>
   </div>
