@@ -1,6 +1,6 @@
 <?php
   $task = $_POST['task'];
-  if($tas k == '') {
+  if($task == '') {
     echo 'введите само задание';
     exit();
   }
