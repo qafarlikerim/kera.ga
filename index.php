@@ -7,7 +7,7 @@
     <title>Список контактов</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
+ </head>
 <body>
   <div class="container">
     <h1>список контактов</h1>
