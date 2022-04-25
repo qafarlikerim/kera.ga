@@ -10,10 +10,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>список контактов</h1>
+    <h1>Список контактов</h1>
     <form action="/add.php" method="post">
       <input type="text" name="task" id="task" placeholder="нужно сделать.." class="form-control">
-      <button type="submit" name="sendTask" class="btn btn-success">отправить</button>
+      <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
   </div>
 </body>
