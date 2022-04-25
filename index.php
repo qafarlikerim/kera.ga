@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Список контактов</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
- </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Список контактов</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
 <body>
   <div class="container">
     <h1>список контактов</h1>
     <form action="/add.php" method="post">
-        <input type="text" name="task" id="task" placeholder="нужно сделать.." class="from-control">
-        <butoon type="submit" name="sendTask" class="btn btn-succes">отправить</button>
+      <input type="text" name="task" id="task" placeholder="нужно сделать.." class="from-control">
+      <butoon type="submit" name="sendTask" class="btn btn-succes">отправить</button>
     </form>
   </div>
 </body>
