@@ -1,16 +1,16 @@
 <?php
-   $task = $_post['task'];
-   if($task == '') {
-     echo 'введите само задание';
-     exit();
-   }
+  $task = $_POST['task'];
+  if($tas k == '') {
+    echo 'введите само задание';
+    exit();
+  }
 
-   $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
-   $pdo = new PDO($dsn, 'root', 'root');
+  $dsn = 'my_db:host=localhost;dbname=kera_addressbook';
+  $pdo = new PDO($dsn, 'kera_kera', '5813910K');
 
-   $sql = 'INSERT INTO tasks(task) VALUES(:task)';
-   $query = $pdo->prepare($sql);
-   $query->execute(['task' => $task]);
+  $sql = 'INSERT INTO tasks(task) VALUES(:task)';
+  $query = $pdo->prepare($sql);
+  $query->execute(['task' => $task]);
 
-   header('Location: /');
+  header('Location: /');
 ?>
