@@ -5,7 +5,7 @@
     exit();
   }
 
-  $dsn = 'mysqli:host=localhost;dbname=kera_addressbook';
+  $dsn = 'mysqli:host=152.67.46.226;dbname=kera_addressbook';
   $pdo = new PDO($dsn, 'kera@localhost', '5813910K');
 
   $sql = 'INSERT INTO tasks(task) VALUES(:task)';
