@@ -8,29 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
 </head>
-
-<!-- <style>
-  body {background-color: #EFF0F3}
-
-.container {
-  margin-top: 50px;
-  width: 25%;
-}
-
-form {
-  background: #2FCC9A;
-  border: 2px solid #228e6c;
-  border-radius: 10px;
-  padding: 20px 10px;
-}
-
-#task {
-  width: 60%;
-  float: left;
-  margin-right: 5%;
-}
-</style> -->
-
 <body>
   <div class="container">
     <h1>Список контактов</h1>
