@@ -54,4 +54,5 @@
   $query->execute(['activity' => $activity]);
 
   header('Location: /');
+
 ?>
