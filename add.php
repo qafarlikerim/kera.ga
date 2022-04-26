@@ -5,8 +5,7 @@
     exit();
   }
 
-  $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
-  $pdo = new PDO($dsn, 'kera_kera', '5813910K');
+  require 'configDB.php';
 
   $sql = 'INSERT INTO people(name) VALUES(:name)';
   $query = $pdo->prepare($sql);

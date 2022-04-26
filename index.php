@@ -15,6 +15,19 @@
       <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
       <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
+
+    <?php
+      require 'configDB.php';
+
+      echo '<ul>';
+      $query = $pdo->query('SELEKT * FROM `people`');
+      while($row = $query->fetch(PDO::FETCH_OBJ)){
+       echo '<li><b>'.$row->name.'</b></li>';
+      }
+      echo '</ul>';
+    ?>
+
+    
   </div>
 </body>
 </html>
