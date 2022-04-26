@@ -13,6 +13,7 @@
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
       <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
+      <input type="text" name="telephone" id="telephone" placeholder="Введите марку телефона..." class="form-control">
       <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
 
@@ -23,6 +24,7 @@
       $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
       while($row = $query->fetch(PDO::FETCH_OBJ)) {
        echo '<li><b>'.$row->name.'</b></li>';
+       echo '<li><b>'.$row->telephone.'</b></li>';
       }
       echo '</ul>';
     ?>
