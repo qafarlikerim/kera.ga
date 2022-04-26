@@ -20,7 +20,7 @@
       require 'configDB.php';
 
       echo '<ul>';
-      $query = $pdo->query('SELEKT * FROM `people`');
+      $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
       while($row = $query->fetch(PDO::FETCH_OBJ)) {
        echo '<li><b>'.$row->name.'</b></li>';
       }
