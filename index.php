@@ -21,13 +21,13 @@
 
       echo '<ul>';
       $query = $pdo->query('SELEKT * FROM `people`');
-      while($row = $query->fetch(PDO::FETCH_OBJ)){
+      while($row = $query->fetch(PDO::FETCH_OBJ)) {
        echo '<li><b>'.$row->name.'</b></li>';
       }
       echo '</ul>';
     ?>
 
-    
+
   </div>
 </body>
 </html>
