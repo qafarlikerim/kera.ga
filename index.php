@@ -13,7 +13,7 @@
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
       <input type="text" name="task" id="task" placeholder="Введите имя контакта..." class="form-control">
-      <buton type="submit" name="sendTask" class="btn btn-success">Отправить</button>
+      <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
   </div>
 </body>
