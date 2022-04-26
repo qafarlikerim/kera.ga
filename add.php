@@ -1,5 +1,5 @@
 <?php
-  $task = $_POST['name'];
+  $task = $_POST['task'];
   if($task == '') {
     echo 'Введите имя контакта';
     exit();
@@ -8,9 +8,9 @@
   $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
   $pdo = new PDO($dsn, 'kera_kera', '5813910K');
 
-  $sql = 'INSERT INTO people(name) VALUES(:name)';
+  $sql = 'INSERT INTO tasks(task) VALUES(:task)';
   $query = $pdo->prepare($sql);
-  $query->execute(['name' => $task]);
+  $query->execute(['task' => $task]);
 
   header('Location: /');
 ?>
