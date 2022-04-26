@@ -1,6 +1,6 @@
 <?php
-  $name = $_POST['name'];
-  if($name == '') {
+  $task = $_POST['name'];
+  if($task == '') {
     echo 'Введите имя контакта';
     exit();
   }
@@ -10,7 +10,7 @@
 
   $sql = 'INSERT INTO people(name) VALUES(:name)';
   $query = $pdo->prepare($sql);
-  $query->execute(['name' => $name]);
+  $query->execute(['name' => $task]);
 
   header('Location: /');
 ?>
