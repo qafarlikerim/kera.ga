@@ -1,6 +1,6 @@
 <?php
   $number = $_POST['number'];
-  if($number == input type="text") {
+  if($number == '') {
     echo 'Введите номер контакта';
     exit();
   }
