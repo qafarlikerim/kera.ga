@@ -5,14 +5,6 @@
     exit();
   }
 
-  require 'configDB.php';
-
-  $sql = 'INSERT INTO people(name) VALUES(:name)';
-  $query = $pdo->prepare($sql);
-  $query->execute(['name' => $name]);
-
-  header('Location: /');
-
   $number = $_POST['number'];
   if($number == '') {
     echo 'Введите номер';
@@ -20,7 +12,11 @@
   }
 
   require 'configDB.php';
-  
+
+  $sql = 'INSERT INTO people(name) VALUES(:name)';
+  $query = $pdo->prepare($sql);
+  $query->execute(['name' => $name]);
+
   $sql = 'INSERT INTO people(number) VALUES(:number)';
   $query = $pdo->prepare($sql);
   $query->execute(['number' => $number]);
