@@ -1,15 +1,15 @@
 <?php
-  $name = $_POST['name'];
-  if($name == '') {
+  $name, $number = $_POST['name, number'];
+  if($name, $number == '') {
     echo 'Введите имя контакта';
     exit();
   }
 
   require 'configDB.php';
 
-  $sql = 'INSERT INTO people(name) VALUES(:name)'; 
+  $sql = 'INSERT INTO people(name, number) VALUES(:name,number)'; 
   $query = $pdo->prepare($sql);
-  $query->execute(['name' => $name]);
+  $query->execute(['name, number' => $name, $number]);
 
   header('Location: /');
 
