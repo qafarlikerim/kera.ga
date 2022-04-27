@@ -7,7 +7,7 @@
 
   require 'configDB.php';
  
-  $sql = 'INSERT INTO people(name) ALUES(:name)'; 
+  $sql = 'INSERT INTO people(name) VALUES(:name)'; 
   $query = $pdo->prepare($sql);
   $query->execute(['name' => $name]);
 
