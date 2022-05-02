@@ -27,8 +27,6 @@
       }
       echo '</ul>';
 
-      require 'configDB.php';
-
       echo '<ul>';
       $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
       while($row = $query->fetch(PDO::FETCH_OBJ)) {
