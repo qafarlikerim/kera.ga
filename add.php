@@ -12,7 +12,8 @@
   $query->execute(['name' => $name]);
 
   header('Location: /');
-
+?>
+<?php
   $number = $_POST['number'];
   if($number == '') {
     echo 'Введите номер контакта';
