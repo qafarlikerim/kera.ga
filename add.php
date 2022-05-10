@@ -1,7 +1,7 @@
 <?php
   $name = $_POST['name'];
-  if($name == '') {
-    echo 'Введите имя контакта';
+  if($name == '') ($number == ''){
+    echo 'Введите имя контакта' 'Введите номер контакта';
     exit();
   }
 
@@ -14,12 +14,6 @@
   header('Location: /');
 ?>
 <?php
-  $number = $_POST['number'];
-  if($number == '') {
-    echo 'Введите номер контакта';
-    exit();
-  }
-
   require 'configDB.php';
 
   $sql = 'INSERT INTO numbers(number) VALUES(:number)'; 
