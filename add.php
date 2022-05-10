@@ -13,7 +13,7 @@
 
   header('Location: /');
 
-  $name = $_POST['name'];
+  $number = $_POST['number'];
   if($number == '') {
     echo 'Введите номер контакта...';
     exit();
