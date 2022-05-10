@@ -12,14 +12,13 @@
   $query->execute(['name' => $name]);
 
   header('Location: /');
-?>
-<?php
+
   $name = $_POST['name'];
   if($number == '') {
     echo 'Введите номер контакта...';
     exit();
   }
-  
+
   require 'configDB.php';
 
   $sql = 'INSERT INTO numbers(number) VALUES(:number)'; 
