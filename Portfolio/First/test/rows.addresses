@@ -1,9 +1,0 @@
-<tr><td bgcolor="#c0c0c0">
-<b>{last_name},{first_name}</b>
-</td></tr>
-<tr><td>
-<b>{telephone}</b>
-</td></tr>
-<tr><td>
-<b><a href = "mailto:{email}">{email}</a></b>
-</td></tr>
