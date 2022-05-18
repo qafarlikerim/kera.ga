@@ -7,19 +7,29 @@
     <title>HTML Lesson 1</title>
 </head>
 <body>
-    <img src="https://kera.ga/images/anthony.jpg"
-    width="200" />
-  <h1>Гафарлы Керим</h1>
-  <p><em>Я основатель одноименного <strong>YouTube канала</strong></em></p>
-  <p><i> Я люблю путешествовать, занматься спортом и программированием</i></p>
-
-  <hr color="green">
+    <table cellspacing="15">
+      <tr>
+        <td>
+          <img src="https://kera.ga/images/anthony.jpg"
+          width="200" />
+        </td>
+        <td>
+          <h1>Гафарлы Керим</h1>
+          <p><em>Я основатель одноименного<strong>YouTube канала</strong></em></p>
+          <p><i> Я люблю путешествовать, занматься спортом и программированием</i></p>
+        </td>
+      </tr>
+    </table>
+      
+  <hr color="blue">
 
   <h2>Мои социальные сети</h2>
   <ul type="square">
    <li><a href="https://instagram.com/kerim_qafarli" target="_blank">Мой Инстаграм</a></li>
    <li><a href="https://t.me/kerimqafarli" target="_blank">Мой Т елеграмм</a></li>
   </ul>
+
+  <hr color="red">
 
   <h2>Мои хобби</h2>
   <ol>
@@ -29,12 +39,14 @@
       <li>Путешествия</li>
   </ol>
 
+  <hr color="green">
+
   <h2>Опыт работы</h2>
-  <table>
+  <table border="10">
     <tr>
-        <td>NAME:</td>
-        <td>DATE:</td>
-        <td>PROFESSION:</td>
+        <th>NAME:</th>
+        <th>DATE:</th>
+        <th>PROFESSION:</th>
     </tr>  
     <tr>
         <td>UCS</td>
@@ -53,7 +65,33 @@
     </tr>
   </table>
 
+  <hr colo="yellow">
+
   <h2>YouTube Курсы</h2>
   <a href="https://kera.ga/portfolio/training/youtube.html" target="_blank">Посмотреть список</a>
+
+  <hr color="purple">
+
+  <h2>Связаться со мной</h2>
+
+  <form action="/keraga">
+      <label for="name">Ваше имя:</label>
+      <imput type="text" id="name" placeholder="введите ваше имя..."></imput>
+
+      <br>
+
+      <label for="email">Ваш Email:</label>
+      <imput type="email" id="email" placeholder="введите ваш Email..."></imput>
+
+      <br>
+
+      <label for="text">Ваше сообщение:</label>
+      <br>
+      <textarea id="text" cols="15" rows="3"></textarea>
+
+      <br>
+
+      <imput type="submit" value="Связаться!"></imput>
+  </form>
 </body>
 </html>
