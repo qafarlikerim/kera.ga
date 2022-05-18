@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
-    $pdo = new PDO($dsn, 'kera_kera', '5813910K');
+    $dsn = 'mysql:host=kera@localhost;dbname=kera_addressbook';
+    $pdo = new PDO($dsn, 'kera', '5813910K');
 ?> 
   
