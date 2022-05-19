@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
+  <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
+  <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
+  <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div class="container">
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
