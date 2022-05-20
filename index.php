@@ -12,6 +12,19 @@
   <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
+  <table width="50%" align="center" border="1">
+    <tr>
+        <th>№</th>
+        <th>Name</th>
+        <th>Number</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
   <div class="container">
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
