@@ -1,5 +1,6 @@
-<title>Ощибка</title>
+<title>Ощибка...</title>
 <a href="index.php">Вернуться назад</a>
+<br>
 <?php
   $number = $_POST['number'];
   if($number == '') {
