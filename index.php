@@ -13,7 +13,6 @@ table, th, td {
 }
 </style>
 <style>
-/* Large rounded green border */
 hr.new5 {
   border: 3px solid red;
   border-radius: 5px;
