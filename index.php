@@ -12,9 +12,9 @@
   <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
-  <table align="center" border="1">
+  <table width="50%" align="center" border="1">
     <br>
-    <tr>
+    <!-- <tr>
         <th>№</th>
         <th>Name</th>
         <th>Number</th>
@@ -38,8 +38,38 @@
         <td>...</td>
         <td>...</td>
         <td>...</td>
+    </tr> -->
+    <tr>
+        <th>№</th>
+        <th>Avtomobil</th>
+        <th>Qiymet</th>
     </tr>
-
+    <tr>
+        <td>1</td>
+        <td>Nissan</td>
+        <td>30.000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Toyota</td>
+        <td>20.000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>BMW</td>
+        <td>50.000</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Mercedes</td>
+        <td>60.000</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Volkswagen</td>
+        <td>70.000</td>
+    </tr>
+</table>
 </table>
   <div class="container">
     <h1>Список контактов</h1>
