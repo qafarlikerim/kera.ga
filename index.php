@@ -18,7 +18,7 @@ table, th, td {
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <br>
-  <table "width: 50% align="center">
+  <table width="50%"  align="center">
     <tr>
         <th>№</th>
         <th>Name</th>
