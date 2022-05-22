@@ -18,8 +18,7 @@ table, th, td {
   <h2 align="center" >Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   <h2 align="center" >We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
 
-  hr { background-color: red; height: 1px; border: 0; }
-  <hr>
+  <hr style="border-top: 1px solid #ccc; background: transparent;">
   
   <br>
   <table width="50%"  align="center">
