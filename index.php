@@ -13,7 +13,7 @@
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <br>
-  <table border="3" style="width: 50%; height: 50%" align="center"><tbody>
+  <table border="3" style="width: 50%; height: 50%" align="center">
     <tr>
         <th>№</th>
         <th>Name</th>
@@ -39,7 +39,7 @@
         <td>...</td>
         <td>...</td>
     </tr>
-</tbody></table>
+</table>
   <div class="container">
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
