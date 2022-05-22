@@ -1,5 +1,5 @@
 <title>Ощибка...</title>
-<a href="index.php">Вернуться назад</a>
+<a href="index.php"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="стрелка" width="4%"></a>
 <br>
 <?php
   $number = $_POST['number'];
