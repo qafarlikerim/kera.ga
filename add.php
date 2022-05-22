@@ -4,6 +4,12 @@
     echo 'Введите номер контакта...';
     exit();
   }
+  
+  $name = $_POST['name'];
+  if($name == '') {
+    echo 'Введите имя контакта...';
+    exit();
+  }
 
   require 'configDB.php';
 
@@ -12,12 +18,6 @@
   $query->execute(['number' => $number]);
 
   header('Location: /');
-  
-  $name = $_POST['name'];
-  if($name == '') {
-    echo 'Введите имя контакта...';
-    exit();
-  }
 
   require 'configDB.php';
  
