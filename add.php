@@ -4,7 +4,7 @@
 <?php
   $number = $_POST['number'];
   if($number == '') {
-    // echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
+    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
     // echo($rez['text']);
     echo 'Введите номер контакта...';
     exit();
