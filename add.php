@@ -3,7 +3,7 @@
 <?php
   $number = $_POST['number'];
   if($number == '') {
-    echo "<div style='font-size:14px; font-weight: bold;'>{$rez['nazv']}</div>";
+    echo "<span style="color: white; font-size: 20px;">Welcome";
     echo 'Введите номер контакта...';
     exit();
   }
