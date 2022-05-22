@@ -7,11 +7,6 @@
   <title>Список контактов</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  <style>
-table, th, td {
-  border: 5px solid;
-}
-</style>
 <style>
   h2 .red-text {
     color: red;
