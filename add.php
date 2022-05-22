@@ -3,7 +3,9 @@
 <?php
   $number = $_POST['number'];
   if($number == '') {
-    echo "<span style="color: white; font-size: 20px;">Welcome";
+    $rez=mysql_fetch_array($zapros);
+    echo('<div style="font-size: 14; font-weight: bold;">'.$rez['nazv']);
+    echo($rez['text']);
     echo 'Введите номер контакта...';
     exit();
   }
