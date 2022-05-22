@@ -1,3 +1,4 @@
+<title>Ощибка</title>
 <a href="index.php">Вернуться назад</a>
 <?php
   $number = $_POST['number'];
