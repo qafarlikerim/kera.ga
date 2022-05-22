@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +18,7 @@
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <br>
-  <table border="3" style="width: 50%; height: 50%" align="center">
+  <table "width: 50% align="center">
     <tr>
         <th>№</th>
         <th>Name</th>
@@ -39,7 +44,7 @@
         <td>...</td>
         <td>...</td>
     </tr>
-</table>
+  </table>
   <div class="container">
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
