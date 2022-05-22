@@ -1,5 +1,5 @@
 <?php
-$name = $_POST['name'];
+  $name = $_POST['name'];
   if($name == '') {
     echo 'Введите имя контакта...';
     exit();
