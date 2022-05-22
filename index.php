@@ -20,6 +20,9 @@ hr.new5 {
 </style>
 </head>
 <body>
+<header>
+      <div class="profile-page sidebar-collapse"></div>
+</header>
   <h2 class="red-text" style="color: red;" align="center">Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   <h2 class="red-text" style="color: red;" align="center" >Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   <h2 class="red-text" style="color: red;" align="center" >We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
