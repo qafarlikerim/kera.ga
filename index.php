@@ -14,9 +14,10 @@ table, th, td {
 </style>
 </head>
 <body>
-  <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
-  <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
-  <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
+  <h2 align="center" color="red">Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
+  <h2 align="center" color="red">Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
+  <h2 align="center" color="red">We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
+  <hr color="red">
   <br>
   <table width="50%"  align="center">
     <tr>
