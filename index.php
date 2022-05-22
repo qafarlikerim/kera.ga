@@ -12,13 +12,20 @@ table, th, td {
   border: 5px solid;
 }
 </style>
+<style>
+/* Large rounded green border */
+hr.new5 {
+  border: 3px solid red;
+  border-radius: 5px;
+}
+</style>
 </head>
 <body>
   <h2 class="red-text" style="color: red;" align="center">Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   <h2 class="red-text" style="color: red;" align="center" >Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   <h2 class="red-text" style="color: red;" align="center" >We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
 
-  <hr color="blue">
+  <hr class="new5">
   
   <br>
   <table width="50%"  align="center">
