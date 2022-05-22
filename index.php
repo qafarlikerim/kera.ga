@@ -14,7 +14,6 @@ table, th, td {
 </style>
 </head>
 <body>
-  <div>test<a href="index2.php">index2.php</a></div>
   <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
