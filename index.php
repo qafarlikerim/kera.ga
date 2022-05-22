@@ -13,8 +13,8 @@
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <br>
-  <table border="3" style="width: 50%; height: 50%"><tbody>
-    <tr align="center">
+  <table border="3" style="width: 50%; height: 50%" align="center"><tbody>
+    <tr>
         <th>№</th>
         <th>Name</th>
         <th>Number</th>
