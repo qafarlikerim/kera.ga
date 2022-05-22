@@ -12,7 +12,7 @@
   <div>Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
   <div>We moved to a new site --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></div>
-  <table width="50%" align="center" border="1">
+  <table align="center" border="1">
     <br>
     <tr>
         <th>№</th>
