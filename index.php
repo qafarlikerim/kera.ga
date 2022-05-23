@@ -70,7 +70,7 @@ hr.new5 {
       <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
       <br>
       <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
-      <br>
+      <br><br>
       <button type="reset" name="sendTask" class="btn btn-success">Oтмена</button>
     </form>
 
