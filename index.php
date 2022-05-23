@@ -62,7 +62,7 @@ hr.new5 {
       <br>
       <input type="int" name="number" id="number" placeholder="Введите номер..." class="form-control">
       <br>
-      <input type="" name="date" id="date" placeholder="Введите дату..." class="form-control">
+      <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
       <br>
       <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
