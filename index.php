@@ -33,23 +33,28 @@ hr.new5 {
         <th>№</th>
         <th>Name</th>
         <th>Number</th>
+        <th>Date</th>
     </tr>
     <tr>
         <td>...</td>
         <td>...</td>
         <td>...</td>
-    </tr>
-    <tr>
-        <td>...</td>
-        <td>...</td>
         <td>...</td>
     </tr>
     <tr>
         <td>...</td>
         <td>...</td>
         <td>...</td>
+        <td>...</td>
     </tr>
     <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>...</td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
