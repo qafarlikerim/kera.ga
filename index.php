@@ -59,7 +59,11 @@ hr.new5 {
     <h1>Список контактов</h1>
     <form action="/add.php" method="post">
       <input type="text" name="name" id="name" placeholder="Введите имя..." class="form-control">
+      <br>
       <input type="int" name="number" id="number" placeholder="Введите номер..." class="form-control">
+      <br>
+      <input type="" name="date" id="date" placeholder="Введите дату..." class="form-control">
+      <br>
       <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
     </form>
 
