@@ -28,7 +28,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5px;
+  font-size: 10px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@
         <br>
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
-        <button type="submit" name="sendTask" class="button button2">Отправить</button>&nbsp;<button type="reset" name="sendTask" class="button button3">Oтмена</button>
+        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
       </form>
   
       <?php
