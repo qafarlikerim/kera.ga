@@ -69,7 +69,7 @@
         <br>
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
-        <button type="submit" name="sendTask" class="btn btn-success"><i class="bi bi-trash"></i></button>
+        <button type="submit" name="sendTask" class="btn btn-success"><i class="bi bi-journal-plus"></i></button>&nbsp;<button type="reset" name="sendTask" class="btn btn-success">Oтмена</button>
       </form>
   
       <?php
