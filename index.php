@@ -22,7 +22,7 @@
   <style>
 .button {
   display: inline-block;
-  padding: 15px 15px;
+  padding: 15px 20px;
   font-size: 8px;
   cursor: pointer;
   text-align: center;
