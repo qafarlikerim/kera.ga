@@ -15,6 +15,13 @@
     exit();
   }
 
+  $data = $_POST['data'];
+  if($data == '') {
+    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
+    echo 'Введите дату...';
+    exit();
+  }
+
   require 'configDB.php';
 
   $sql = 'INSERT INTO numbers(number) VALUES(:number)';
@@ -28,6 +35,14 @@
   $sql = 'INSERT INTO people(name) VALUES(:name)';
   $query = $pdo->prepare($sql);
   $query->execute(['name' => $name]);
+
+  header('Location: /');
+
+  require 'configDB.php';
+ 
+  $sql = 'INSERT INTO people(data) VALUES(:data)';
+  $query = $pdo->prepare($sql);
+  $query->execute(['data' => $data]);
 
   header('Location: /');
 ?>
