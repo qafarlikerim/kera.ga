@@ -19,6 +19,23 @@
     border-radius: 5px;
   }
   </style>
+  <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+</style>
   </head>
   <body>
     <h2 class="red-text" style="color: red;" align="center">Biz yeni sayta köçdük --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
@@ -69,7 +86,7 @@
         <br>
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
-        <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>&nbsp;<button type="reset" name="sendTask" class="btn btn-success">Oтмена</button>
+        <button type="submit" name="sendTask" class="button button2">Отправить</button>&nbsp;<button type="reset" name="sendTask" class="button button3">Oтмена</button>
       </form>
   
       <?php
