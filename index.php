@@ -24,7 +24,7 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 10px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
