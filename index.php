@@ -24,7 +24,7 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -33,6 +33,8 @@
   cursor: pointer;
 }
 
+.button2 {border-radius: 50%;}
+.button3 {border-radius: 50%;}
 .button2 {background-color: #008CBA;} /* Blue */
 .button3 {background-color: #f44336;} /* Red */ 
 </style>
