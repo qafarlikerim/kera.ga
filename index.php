@@ -58,7 +58,7 @@
     <br>
     <table width="50%"  align="center">
       <tr>
-          <th colspan="3">№</th>
+          <th>№</th>
           <th>Name</th>
           <th>Number</th>
           <th>Date</th>
