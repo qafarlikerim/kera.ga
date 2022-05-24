@@ -28,7 +28,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 5px;
   margin: 4px 2px;
   cursor: pointer;
 }
