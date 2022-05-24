@@ -69,14 +69,7 @@
         <br>
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
-        <!-- <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>&nbsp;<button type="reset" name="sendTask" class="btn btn-success">Oтмена</button> -->
-        <button class="PlayButton" onclick="togglePlayPause1()">
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio1"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/005097.mp3"
-                ></audio>
-              </button>
+        <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>&nbsp;<button type="reset" name="sendTask" class="btn btn-success">Oтмена</button>
       </form>
   
       <?php
