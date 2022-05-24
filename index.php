@@ -22,8 +22,8 @@
   <style>
 .button {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 15px 15px;
+  font-size: 8px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
