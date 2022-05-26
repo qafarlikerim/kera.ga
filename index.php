@@ -69,7 +69,7 @@
       <tr>
           <th>№</th>
           <th>Name</th>
-      <?php
+      <!-- <?php
           echo '<ul>';
           $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
           while($row = $query->fetch(PDO::FETCH_OBJ)) {
@@ -81,7 +81,7 @@
               </tr>
               <?php
           }
-      ?>
+      ?> -->
       </tr>
     </table>
     <div class="container">
