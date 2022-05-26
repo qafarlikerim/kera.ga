@@ -79,6 +79,15 @@
           <td>...</td>
       </tr>
     </table>
+
+    <pre>
+        <?php
+            $names = mysqli_query($pdo, query:"SELECT * FROM `people`");
+            $names = mysqli_fetch_all($names);
+            print_r($names);
+        ?>
+    </pre>
+
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
