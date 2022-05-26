@@ -1,3 +1,9 @@
+<?php
+
+require 'configDB.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -72,24 +78,10 @@
           <th>Number</th>
           <th>Date</th>
       </tr>
-      <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-      </tr>
-      <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-      </tr>
-      <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-      </tr>
+
+      <?php
+          $
+
       <tr>
           <td>...</td>
           <td>...</td>
