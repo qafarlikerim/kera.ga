@@ -8,18 +8,26 @@
     <link rel="icon" href="/address_book.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <style>
-  table, th, td {
-    border: 5px solid;
-  }
-  </style>
-  <style>
+<style>
+    th, td {
+        padding: 10px;
+    }
+
+    th {
+        background: #606060;
+    }
+
+    td {
+        background: #b5b5b5;
+    }
+</style>
+<style>
   hr.new5 {
     border: 3px solid red;
     border-radius: 5px;
   }
-  </style>
-  <style>
+</style>
+<style>
 .button {
   display: inline-block;
   padding: 15px 20px;
