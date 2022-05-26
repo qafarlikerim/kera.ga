@@ -71,8 +71,8 @@
           <th>Name</th>
       </tr>
       <tr>
-          <td><?= name[0] ?></td>
-          <td><?= name[1] ?></td>
+          <td>...</td>
+          <td>...</td>
       </tr>
     </table>
     <div class="container">
