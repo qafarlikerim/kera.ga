@@ -73,7 +73,7 @@
           <th>Date</th>
       </tr>
 
-      <?php
+      <!-- <?php
             $names = mysqli_query($pdo, query:"SELECT * FROM `people`");
             $names = mysqli_fetch_all($names);
             foreach ($names as name) {
@@ -86,7 +86,7 @@
               </tr>
               ';
             }
-        ?>
+      ?> -->
 
     </table>
     <div class="container">
