@@ -22,7 +22,7 @@
     exit();
   }
 
-  require 'configDB.php';
+  require_once 'configDB.php';
 
   $sql = 'INSERT INTO numbers(number) VALUES(:number)';
   $query = $pdo->prepare($sql);
@@ -30,7 +30,7 @@
 
   header('Location: /');
 
-  require 'configDB.php';
+  require_once 'configDB.php';
  
   $sql = 'INSERT INTO people(name) VALUES(:name)';
   $query = $pdo->prepare($sql);
@@ -38,17 +38,11 @@
 
   header('Location: /');
 
-  require 'configDB.php';
+  require_once 'configDB.php';
  
   $sql = 'INSERT INTO people(data) VALUES(:data)';
   $query = $pdo->prepare($sql);
   $query->execute(['data' => $data]);
 
   header('Location: /');
-?>
-<?php
-    $names = mysqli_query($pdo, query:"SELECT * FROM `people`");
-    $names = mysqli_fetch_all($names);
-    foreach ($names as name) {
-    }
 ?>
