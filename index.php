@@ -78,10 +78,6 @@ require 'configDB.php';
           <th>Number</th>
           <th>Date</th>
       </tr>
-
-      <?php
-          $
-
       <tr>
           <td>...</td>
           <td>...</td>
