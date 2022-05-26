@@ -70,20 +70,6 @@
           <th>№</th>
           <th>Name</th>
       </tr>
-
-      <?php
-            $names = mysqli_query($pdo, query:"SELECT * FROM `people`");
-            $names = mysqli_fetch_all($names);
-            foreach ($names as name) {
-              ?>
-                <tr>
-                    <td><?= name[0] ?></td>
-                    <td><?= name[1] ?></td>
-                </tr>
-              <?php
-            }
-      ?>
-
     </table>
     <div class="container">
       <h1>Список контактов</h1>
@@ -104,7 +90,13 @@
         $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->name.'</b></li>';
-        }
+      ?>
+        <tr>
+            <td><?= name[0] ?></td>
+            <td><?= name[1] ?></td>
+        </tr>
+      <?php
+    }
         
         $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
