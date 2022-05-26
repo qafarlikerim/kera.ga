@@ -72,22 +72,23 @@
           <th>Number</th>
           <th>Date</th>
       </tr>
-      <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-      </tr>
-    </table>
 
-    <pre>
-        <?php
+      <?php
             $names = mysqli_query($pdo, query:"SELECT * FROM `people`");
             $names = mysqli_fetch_all($names);
-            print_r($names);
+            foreach ($names as name) {
+              echo '
+              <tr>
+                  <td>' . $name[0] . '</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+              </tr>
+              ';
+            }
         ?>
-    </pre>
 
+    </table>
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
