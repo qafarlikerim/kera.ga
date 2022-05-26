@@ -1,9 +1,3 @@
-<?php
-
-require 'configDB.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
