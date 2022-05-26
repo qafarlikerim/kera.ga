@@ -15,6 +15,7 @@
 
     th {
         background: #606060;
+        color: #fff;
     }
 
     td {
