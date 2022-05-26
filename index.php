@@ -69,6 +69,19 @@
       <tr>
           <th>№</th>
           <th>Name</th>
+      <?php
+          echo '<ul>';
+          $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
+          while($row = $query->fetch(PDO::FETCH_OBJ)) {
+          echo '<li><b>'.$row->name.'</b></li>';
+              ?>
+              <tr>
+                <td><?= $name[0] ?></td>
+                <td><?= $name[1] ?></td>
+              </tr>
+              <?php
+          }
+      ?>
       </tr>
     </table>
     <div class="container">
@@ -91,7 +104,7 @@
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->name.'</b></li>';
         }
-        
+
         $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->number.'</b></li>';
