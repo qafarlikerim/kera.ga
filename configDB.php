@@ -1,10 +1,9 @@
 <?php
 
-$pdo = new PDO("localhost", "kera_kera", "5813910K", "kera_addressbook");
+// $mysqli = new mysqli("localhost", "kera_kera", "5813910K", "kera_addressbook");
 
-echo '<ul>';
-$query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
-while($row = $query->fetch(PDO::FETCH_OBJ)) {
- echo '<li><b>'.$row->name.'</b></li>';
-}
+// echo $mysqli->host_info . "\n";
+
+    $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
+    $pdo = new PDO($dsn, 'kera_kera', '5813910K');
 ?> 
