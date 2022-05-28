@@ -91,6 +91,7 @@
          echo '<li><b>'.$row->name.'</b></li>';
         }
         echo '<ul>';
+        echo '<ul>';
 
         $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
