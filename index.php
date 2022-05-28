@@ -85,12 +85,12 @@
   
       <?php
         require_once 'configDB.php';
-  
-        echo '<ul>';
+
         $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->name.'</b></li>';
         }
+
 
         $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
