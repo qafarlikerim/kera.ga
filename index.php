@@ -90,13 +90,13 @@
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->name.'</b></li>';
         }
-
+        echo '<ul>';
 
         $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
          echo '<li><b>'.$row->number.'</b></li>';
         }
-        echo '</ul>';
+
 
         $query = $pdo->query('SELECT * FROM `data` ORDER BY `id` DESC');
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
