@@ -1,9 +1,13 @@
 <?php
+    // $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
+    // $pdo = new PDO($dsn, 'kera_kera', '5813910K');
 
-// $mysqli = new mysqli("localhost", "kera_kera", "5813910K", "kera_addressbook");
+mysqli_report(MYSQLI_REPORT_OFF);
 
-// echo $mysqli->host_info . "\n";
+$connect = mysqli_connect('localhost', 'kera_kera', '5813910K', 'kera_addressbook');
 
-    $dsn = 'mysql:host=localhost;dbname=kera_addressbook';
-    $pdo = new PDO($dsn, 'kera_kera', '5813910K');
+if (!$connect) {
+    echo 'Error connect to database!';
+}
+
 ?> 
