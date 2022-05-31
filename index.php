@@ -65,12 +65,29 @@
     <hr class="new5">
     
     <br>
-    <table width="50%"  align="center">
-      <tr>
-          <th>№</th>
-          <th>Name</th>
-      </tr>
-    </table>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+
+        <?php
+            $products = mysqli_query($connect, query:"SELECT * FROM `products`");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $products) {
+                ?>
+                    <tr>
+                        <td><?= $products[0] ?></td>
+                        <td><?= $products[1] ?></td>
+                        <td><?= $products[3] ?></td>
+                        <td><?= $products[2] ?></td>
+                    </tr>
+                <?php
+            }
+        ?>
+    </table>       
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
@@ -81,30 +98,7 @@
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
-      </form>
-  
-      <?php
-        require_once 'configDB.php';
-  
-        echo '<ul>';
-        $query = $pdo->query('SELECT * FROM `people` ORDER BY `id` DESC');
-        while($row = $query->fetch(PDO::FETCH_OBJ)) {
-         echo '<li><b>'.$row->name.'</b></li>';
-        }
-
-        $query = $pdo->query('SELECT * FROM `numbers` ORDER BY `id` DESC');
-        while($row = $query->fetch(PDO::FETCH_OBJ)) {
-         echo '<li><b>'.$row->number.'</b></li>';
-        }
-        echo '</ul>';
-
-        $query = $pdo->query('SELECT * FROM `data` ORDER BY `id` DESC');
-        while($row = $query->fetch(PDO::FETCH_OBJ)) {
-         echo '<li><b>'.$row->data.'</b></li>';
-        }
-        echo '</ul>';
-      ?>
-  
+      </form>  
     </div>
   </body>
 </html>
