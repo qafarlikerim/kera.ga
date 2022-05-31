@@ -71,7 +71,7 @@ require_once 'connect.php';
     <hr class="new5">
     
     <br>
-    <table>
+    <table width="50%"  align="center">
         <tr>
             <th>ID</th>
             <th>Title</th>

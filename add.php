@@ -1,22 +1,22 @@
 <title>Ощибка...</title>
 <a href="https://kera.ga/"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="вернуться назад..." width="4%"></a>
 <?php
-  $name = $_POST['name'];
-  if($name == '') {
+  $title = $_POST['title'];
+  if($title == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
     echo 'Введите имя контакта...';
     exit();
   }
 
-  $number = $_POST['number'];
-  if($number == '') {
+  $price = $_POST['price'];
+  if($price == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
     echo 'Введите номер контакта...';
     exit();
   }
 
-  $data = $_POST['data'];
-  if($data == '') {
+  $description = $_POST['description'];
+  if($description == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
     echo 'Введите дату...';
     exit();
@@ -24,25 +24,25 @@
 
   require_once 'configDB.php';
 
-  $sql = 'INSERT INTO numbers(number) VALUES(:number)';
+  $sql = 'INSERT INTO products(title) VALUES(:title)';
   $query = $pdo->prepare($sql);
-  $query->execute(['number' => $number]);
+  $query->execute(['title' => $title]);
 
   header('Location: /');
 
   require_once 'configDB.php';
  
-  $sql = 'INSERT INTO people(name) VALUES(:name)';
+  $sql = 'INSERT INTO products(price) VALUES(:price)';
   $query = $pdo->prepare($sql);
-  $query->execute(['name' => $name]);
+  $query->execute(['price' => $price]);
 
   header('Location: /');
 
   require_once 'configDB.php';
  
-  $sql = 'INSERT INTO people(data) VALUES(:data)';
+  $sql = 'INSERT INTO products(description) VALUES(:description)';
   $query = $pdo->prepare($sql);
-  $query->execute(['data' => $data]);
+  $query->execute(['description' => $description]);
 
   header('Location: /');
 ?>
