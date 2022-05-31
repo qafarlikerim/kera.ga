@@ -88,7 +88,7 @@
             }
         ?>
     </table>       
-    <div class="container">
+    <!-- <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
         <input type="text" name="name" id="name" placeholder="Введите имя..." class="form-control">
@@ -97,7 +97,7 @@
         <br>
         <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
-        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
+        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button> -->
       </form>  
     </div>
   </body>
