@@ -5,11 +5,11 @@ require_once 'connect.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Список контактов</title>
-  </head>
+</head>
 <style>
     th, td {
         padding: 10px;
@@ -24,7 +24,7 @@ require_once 'connect.php';
         background: #b5b5b5;
     }
 </style>
-  <body>
+<body>
     <table>
         <tr>
             <th>ID</th>
@@ -48,5 +48,5 @@ require_once 'connect.php';
             }
         ?>
     </table>  
-  </body>
+</body>
 </html>
