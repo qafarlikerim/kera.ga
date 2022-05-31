@@ -1,3 +1,9 @@
+<?php
+
+require_once 'connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -8,6 +14,8 @@
     <link rel="icon" href="/address_book.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  </head>
 <style>
     th, td {
         padding: 10px;
@@ -22,7 +30,6 @@
         background: #b5b5b5;
     }
 </style>
-  </head>
   <body>
     <table>
         <tr>
