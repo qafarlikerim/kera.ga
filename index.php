@@ -96,8 +96,8 @@ require_once 'connect.php';
     </table>
     <div class="container">
       <h1>Список контактов</h1>
-      <form action="/add.php" method="post">
-        <input width="50%" type="text" name="description" id="description" placeholder="Введите описание..." class="form-control">
+      <form action="/add.php" method="post" width="50%">
+        <input type="text" name="description" id="description" placeholder="Введите описание..." class="form-control">
         <br>
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
       </form>  
