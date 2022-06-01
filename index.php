@@ -1,6 +1,6 @@
 <?php
 
-require_once 'connect.php';
+require_once 'config/connect.php';
 
 ?>
 
@@ -101,6 +101,7 @@ require_once 'connect.php';
                         <td><?= $people[1] ?></td>
                         <td><?= $people[2] ?></td>
                         <td><?= $people[3] ?></td>
+                        <td><a href="#">Обновить</a></td>
                     </tr>
                 <?php
             }
