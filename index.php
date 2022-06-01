@@ -80,15 +80,15 @@ require_once 'connect.php';
         </tr>
 
         <?php
-            $products = mysqli_query($connect, query:"SELECT * FROM `products`");
-            $products = mysqli_fetch_all($products);
-            foreach ($products as $products) {
+            $people = mysqli_query($connect, query:"SELECT * FROM `people`");
+            $people = mysqli_fetch_all($people);
+            foreach ($people as $people) {
                 ?>
                     <tr>
-                        <td><?= $products[0] ?></td>
-                        <td><?= $products[1] ?></td>
-                        <td><?= $products[3] ?></td>
-                        <td><?= $products[2] ?></td>
+                        <td><?= $people[0] ?></td>
+                        <td><?= $people[1] ?></td>
+                        <td><?= $people[3] ?></td>
+                        <td><?= $people[2] ?></td>
                     </tr>
                 <?php
             }
