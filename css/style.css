@@ -1,4 +1,4 @@
-body {background-color: #000000}
+body {background-color: #EFF0F3}
 
 .container {
   margin-top: 50px;
@@ -6,9 +6,9 @@ body {background-color: #000000}
 }
 
 form {
-  background: #ffffff;
-  border: 5px solid #000000;
-  border-radius: 10px;
+  background: #2FCC9A;
+  border: 2px solid #228e6c;
+  border-radius: 1px;
   padding: 20px 10px;
 }
 
