@@ -8,8 +8,8 @@ body {background-color: #EFF0F3}
 form {
   background: #2FCC9A;
   border: 2px solid #228e6c;
-  border-radius: 60px;
-  padding: 20px 10px;
+  border-radius: 30px;
+  padding: 5px 1px;
 }
 
 #task {
