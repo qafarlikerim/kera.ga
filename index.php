@@ -70,7 +70,6 @@ require_once 'connect.php';
   
     <hr class="new5">
     
-    <br>
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
@@ -83,6 +82,7 @@ require_once 'connect.php';
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
       </form>  
     </div>
+    <br><br>
     <table width="50%"  align="center">
         <tr>
             <th>ID</th>
