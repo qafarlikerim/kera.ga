@@ -11,11 +11,4 @@ $price = $_POST['price'];
 mysqli_query($connect, query:"INSERT INTO `products` (`id`, `title`, `price`, `descripsion`) VALUES (NULL, '$title', '$price', '$description')");
 
 header( string: 'Location: index.php');
-
-$title = $_POST['title'];
-  if($title == '') {
-    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
-    echo 'Введите имя контакта...';
-    exit();
-  }
 ?>
