@@ -97,6 +97,10 @@ require_once 'connect.php';
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
+        <input type="text" name="title" id="title" placeholder="Введите title..." class="form-control">
+        <br>
+        <input type="number" name="price" id="price" placeholder="Введите price..." class="form-control">
+        <br>
         <input type="text" name="description" id="description" placeholder="Введите описание..." class="form-control">
         <br>
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
