@@ -70,7 +70,7 @@ require_once 'connect.php';
   
     <hr class="new5">
     
-    <div class="container">
+    <div class="container" id="task">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
         <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
