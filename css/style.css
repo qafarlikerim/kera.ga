@@ -1,8 +1,8 @@
 body {background-color: #EFF0F3}
 
 .container {
-  margin-top: 3px;
-  width: 3%;
+  margin-top: 50px;
+  width: 25%;
 }
 
 form {
@@ -13,7 +13,7 @@ form {
 }
 
 #task {
-  width: 60%;
-  float: left;
-  margin-right: 5%;
+  width: 5%;
+  float: center;
+  margin-right: 1%;
 }
