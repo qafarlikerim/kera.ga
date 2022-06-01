@@ -71,6 +71,18 @@ require_once 'connect.php';
     <hr class="new5">
     
     <br>
+    <div class="container">
+      <h1>Список контактов</h1>
+      <form action="/add.php" method="post">
+        <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
+        <br>
+        <input type="number" name="number" id="number" placeholder="Введите номер контакта..." class="form-control">
+        <br>
+        <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
+        <br>
+        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
+      </form>  
+    </div>
     <table width="50%"  align="center">
         <tr>
             <th>ID</th>
@@ -94,17 +106,5 @@ require_once 'connect.php';
             }
         ?>
     </table>
-    <div class="container">
-      <h1>Список контактов</h1>
-      <form action="/add.php" method="post">
-        <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
-        <br>
-        <input type="number" name="number" id="number" placeholder="Введите номер контакта..." class="form-control">
-        <br>
-        <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
-        <br>
-        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
-      </form>  
-    </div>
 </body>
 </html>
