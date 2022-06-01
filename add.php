@@ -8,11 +8,25 @@
     exit();
   }
 
+  $price = $_POST['price'];
+  if($price == '') {
+    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
+    echo 'Введите price...';
+    exit();
+  }
+
+  $description = $_POST['description'];
+  if($description == '') {
+    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
+    echo 'Введите description...';
+    exit();
+  }
+
   require_once 'connect.php';
 
   $title = $_POST['title'];
-  $description = $_POST['description'];
   $price = $_POST['price'];
+  $description = $_POST['description'];
   
   mysqli_query($connect, query:"INSERT INTO `products` (`id`, `title`, `price`, `descripsion`) VALUES (NULL, '$title', '$price', '$description')");
 
