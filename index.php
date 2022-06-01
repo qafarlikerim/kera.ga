@@ -97,11 +97,11 @@ require_once 'connect.php';
     <div class="container">
       <h1>Список контактов</h1>
       <form action="/add.php" method="post">
-        <input type="text" name="title" id="title" placeholder="Введите title..." class="form-control">
+        <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
         <br>
-        <input type="number" name="price" id="price" placeholder="Введите price..." class="form-control">
+        <input type="number" name="number" id="number" placeholder="Введите номер контакта..." class="form-control">
         <br>
-        <input type="text" name="description" id="description" placeholder="Введите описание..." class="form-control">
+        <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
         <br>
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
       </form>  

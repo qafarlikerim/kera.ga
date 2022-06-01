@@ -1,34 +1,34 @@
 <title>Ощибка...</title>
 <a href="https://kera.ga/"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="вернуться назад..." width="4%"></a>
 <?php
-  $title = $_POST['title'];
-  if($title == '') {
+  $name = $_POST['name'];
+  if($name == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
     echo 'Введите имя контакта...';
     exit();
   }
 
-  $price = $_POST['price'];
-  if($price == '') {
+  $number = $_POST['number'];
+  if($number == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
-    echo 'Введите price...';
+    echo 'Введите номер контакта...';
     exit();
   }
 
-  $description = $_POST['description'];
-  if($description == '') {
+  $date = $_POST['date'];
+  if($date == '') {
     echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
-    echo 'Введите description...';
+    echo 'Введите дату...';
     exit();
   }
 
   require_once 'connect.php';
 
-  $title = $_POST['title'];
-  $price = $_POST['price'];
-  $description = $_POST['description'];
+  $name = $_POST['name'];
+  $number = $_POST['number'];
+  $date = $_POST['date'];
   
-  mysqli_query($connect, query:"INSERT INTO `products` (`id`, `title`, `price`, `descripsion`) VALUES (NULL, '$title', '$price', '$description')");
+  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`, `number`, `date`) VALUES (NULL, '$name', '$number', '$date')");
 
   header('Location: /');
 ?>
