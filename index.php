@@ -74,9 +74,9 @@ require_once 'connect.php';
     <table width="50%"  align="center">
         <tr>
             <th>ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th>Имя</th>
+            <th>Номер</th>
+            <th>Дата</th>
         </tr>
 
         <?php
@@ -87,8 +87,8 @@ require_once 'connect.php';
                     <tr>
                         <td><?= $people[0] ?></td>
                         <td><?= $people[1] ?></td>
-                        <td><?= $people[3] ?></td>
                         <td><?= $people[2] ?></td>
+                        <td><?= $people[3] ?></td>
                     </tr>
                 <?php
             }
