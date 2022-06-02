@@ -100,7 +100,7 @@ require_once 'config/connect.php';
                         <td><?= $people[2] ?></td>
                         <td><?= $people[3] ?></td>
                         <td><a href="update.php?id=<?= $people[0] ?>">Обновить</a></td>
-                        <td><a style="color: red;" href="vendor/delete.php?id=<?= $people[0] ?>">Удалить</a></td>
+                        <td><a style="color: red;" href="vendor/delete.php?id=<?= $people[0] ?>"><img src="https://play-lh.googleusercontent.com/pbfKWZAmdO7W0Vg9VnYO4iKP1mTB8nF1dp32oSrXHBpsIV7HwBhrl_TTih4ol419SF0" alt="удалить" title="удалить" width="4%"></a></td>
                     </tr>
                 <?php
             }
