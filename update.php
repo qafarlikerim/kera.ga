@@ -1,3 +1,8 @@
+<?php
+    print_r($_GET)
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,7 @@
     <title>Update Contact</title>
 </head>
 <body>
-    <h3>Update new contact</h3>
+    <h3>Update Contact</h3>
     <form action="add.php" method="post">
         <p>Name</p>
         <input type="text" name="name">
