@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config/connect.php';
+require_once '../config/connect.php';
 
 $id = $_POST['id'];
 $name = $_POST['name'];
@@ -9,5 +9,5 @@ $date = $_POST['date'];
 
 mysqli_query($connect, query:"UPDATE `people` SET `name` = '$name', `number` = '$number', `date` = '$date' WHERE `people`,`id` = '$id'");
 
-header('Location: /');
+header('Location: ../index.php');
 ?>
