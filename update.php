@@ -16,7 +16,8 @@
 </head>
 <body>
     <h3>Update Contact</h3>
-    <form action="add.php" method="post">
+    <form action="vendor/update.php" method="post">
+        <input type="hidden" name="id" value="<?= $people['id'] ?>">
         <p>Name</p>
         <input type="text" name="name" value="<?= $people['name'] ?>">
         <p>Number</p>
