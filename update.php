@@ -25,7 +25,7 @@
         <p>Date</p>
         <input type="date" name="date" value="<?= $people['date'] ?>">
         <br><br>
-        <button type="submit">Add new contact</button>
+        <button type="submit">Update</button>
     </form>
 </body>
 </html>
