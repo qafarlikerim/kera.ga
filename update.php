@@ -1,9 +1,6 @@
 <?php
 
-    require_once 'config/connect.php';
-
-    $people_id = $_GET['id'];
-    print_r($people_id);
+    print_r($_GET);
 
 ?>
 
