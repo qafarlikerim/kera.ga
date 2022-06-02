@@ -1,6 +1,6 @@
 <?php
 
-    require_once '../connect.php';
+    require_once 'config/connect.php';
 
     $people_id = $_GET['id'];
     $people = mysqli_query($connect, query:"SELECT * FROM `people` WHERE `id` = '$people_id'");
