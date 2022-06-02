@@ -101,7 +101,7 @@ require_once 'config/connect.php';
                         <td><?= $people[1] ?></td>
                         <td><?= $people[2] ?></td>
                         <td><?= $people[3] ?></td>
-                        <td><a href="update.php?id<?= $people[0] ?>">Обновить</a></td>
+                        <td><a href="update.php?id=<?= $people[0] ?>">Обновить</a></td>
                     </tr>
                 <?php
             }
