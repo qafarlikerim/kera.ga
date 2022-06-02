@@ -20,7 +20,7 @@
         <p>Name</p>
         <input type="text" name="name" value="<?= $people['name'] ?>">
         <p>Number</p>
-        <input type="number" name="number" value="<?= $people['name'] ?>">
+        <input type="number" name="number" value="<?= $people['number'] ?>">
         <p>Date</p>
         <input type="date" name="date" value="<?= $people['date'] ?>">
         <br><br>
