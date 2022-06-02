@@ -1,10 +1,7 @@
 <?php
 
-    require_once 'config/connect.php';
+   print_r($_GET);
 
-    $people_id = $_GET['id'];
-    $people = mysqli_query($connect, query:"SELECT * FROM `people` WHERE `id` = '$people_id'");
-    $people = mysqli_fetch_assoc($people);
 ?>
 
 
