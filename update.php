@@ -3,7 +3,7 @@
     require_once 'config/connect.php';
 
     $people_id = $_GET['id'];
-    print_r($people);
+    print_r($people_id);
 
 ?>
 
