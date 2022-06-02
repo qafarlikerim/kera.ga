@@ -22,7 +22,7 @@
     exit();
   }
 
-  require_once 'config/connect.php';
+  require_once '../config/connect.php';
 
   $name = $_POST['name'];
   $number = $_POST['number'];
