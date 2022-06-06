@@ -23,16 +23,16 @@ require_once 'config/connect.php';
     <button class="open-button" onclick="openForm()">Добавить информацию</button>
 
     <div class="form-popup" id="myForm">
-      <form action="vendor/add.php" class="form-container">
+      <form action="vendor/add.php" class="form-container" method="post">
     
         <label for="name"><b>Контакт</b></label>
-        <input type="text" placeholder="Введите имя контакта..." name="name" required>
+        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
     
         <label for="number"><b>Номер</b></label>
-        <input type="number" placeholder="Введите номер..." name="number" required>
+        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
     
-        <button type="submit" class="btn">Добавить</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+        <button type="submit" name="sendTask" class="btn">Добавить</button>
+        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
     <script>
