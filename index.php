@@ -12,7 +12,7 @@ require_once 'config/connect.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Products</title>
     <link rel="icon" href="/address_book.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
