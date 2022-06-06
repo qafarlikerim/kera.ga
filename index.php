@@ -94,7 +94,6 @@ require_once 'config/connect.php';
             foreach ($people as $people) {
                 ?>
                     <tr>
-                        <td><?= $people[0] ?></td>
                         <td><?= $people[1] ?></td>
                         <td><?= $people[2] ?></td>
                         <td><?= $people[3] ?></td>

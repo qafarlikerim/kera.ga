@@ -23,8 +23,6 @@
         <p>Number</p>
         <input type="number" name="number" value="<?= $people['number'] ?>">
         <p>Date</p>
-        <input type="date" name="date" value="<?= $people['date'] ?>">
-        <br><br>
         <button type="submit">Update</button>
     </form>
 </body>
