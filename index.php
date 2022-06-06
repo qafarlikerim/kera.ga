@@ -20,15 +20,20 @@ require_once 'config/connect.php';
   
     <hr class="new5">
     
-    <div class="container" id="task">
-      <h1>Список контактов</h1>
-      <form action="vendor/add.php" method="post">
-        <input type="text" name="name" id="name" placeholder="Введите имя контакта..." class="form-control">
-        <br>
-        <input type="number" name="number" id="number" placeholder="Введите номер контакта..." class="form-control">
-        <br>
-        <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
-      </form>  
+    <button class="open-button" onclick="openForm()">Добавить информацию</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="vendor/add.php" class="form-container">
+    
+        <label for="name"><b>Контакт</b></label>
+        <input type="text" placeholder="Введите имя контакта..." name="name" required>
+    
+        <label for="number"><b>Номер</b></label>
+        <input type="number" placeholder="Введите номер..." name="number" required>
+    
+        <button type="submit" class="btn">Добавить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
     </div>
     <br><br>
     <table width="50%"  align="center">
