@@ -19,22 +19,6 @@ require_once 'config/connect.php';
     <h2 class="red-text" style="color: red;" align="center" ><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   
     <hr class="new5">
-    
-    
-
-    <div class="form-popup" id="myForm">
-      <form action="vendor/add.php" class="form-container" method="post">
-    
-        <label for="name"><b>Контакт</b></label>
-        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
-    
-        <label for="number"><b>Номер</b></label>
-        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-    
-        <button type="submit" name="sendTask" class="btn">Добавить</button>
-        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
-      </form>
-    </div>
 
     <br><br>
     <table width="50%"  align="center">
@@ -59,6 +43,20 @@ require_once 'config/connect.php';
             }
         ?>
     </table>
+
+    <div class="form-popup" id="myForm">
+      <form action="vendor/add.php" class="form-container" method="post">
+    
+        <label for="name"><b>Контакт</b></label>
+        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
+    
+        <label for="number"><b>Номер</b></label>
+        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
+    
+        <button type="submit" name="sendTask" class="btn">Добавить</button>
+        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
 
     <script>
     function openForm() {
