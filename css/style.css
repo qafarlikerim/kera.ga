@@ -8,7 +8,7 @@ form {
   border: 2px solid #228e6c;
   border-radius: 3px;
   padding: 30px 20px;
-  align-self: center;
+  box-align: center;
 }
 
 #task {
