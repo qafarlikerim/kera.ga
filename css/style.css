@@ -64,6 +64,10 @@ td {
   background: #b5b5b5;
 }
 
+.icon_range{
+  width: 10%;
+}
+
 .table_icon{
   width: 5%;
   margin: 3px;
