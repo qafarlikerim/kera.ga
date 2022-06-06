@@ -20,7 +20,7 @@ require_once 'config/connect.php';
   
     <hr class="new5">
     
-    <button class="open-button" onclick="openForm()">Добавить информацию</button>
+    <button class="open-button" onclick="openForm()">+</button>
 
     <div class="form-popup" id="myForm">
       <form action="vendor/add.php" class="form-container" method="post">
@@ -47,22 +47,7 @@ require_once 'config/connect.php';
     <br><br>
     <table width="50%"  align="center">
         <tr>
-            <th>Имя     
-              <button class="open-button" onclick="openForm()">Добавить информацию</button>
-                <div class="form-popup" id="myForm">
-                  <form action="vendor/add.php" class="form-container" method="post">
-                
-                    <label for="name"><b>Контакт</b></label>
-                    <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
-                
-                    <label for="number"><b>Номер</b></label>
-                    <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-                
-                    <button type="submit" name="sendTask" class="btn">Добавить</button>
-                    <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
-                  </form>
-                </div>
-            </th>
+            <th>Имя</th>
             <th>Номер</th>
         </tr>
 
