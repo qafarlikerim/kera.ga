@@ -20,6 +20,7 @@
         <input type="hidden" name="id" value="<?= $people['id'] ?>">
         <p>Number</p>
         <input type="number" name="number" value="<?= $people['number'] ?>">
+        <button type="submit">Update</button>
     </form>
 </body>
 </html>
