@@ -102,17 +102,17 @@ require_once 'config/connect.php';
         ?>
     </table>
     <div class="profile-page">
-                          <div class="wrapper">
-                            <div class="page-header page-header-small" filter-color="green">
-                              <div class="section">
-                                <div class="container">
-                                  <div class="button-container">
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="vendor/delete.php?id=<?= $people[0] ?>" rel="tooltip" title="delete"><i class="fa fa-instagram"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+      <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="green">
+          <div class="section">
+            <div class="container">
+              <div class="button-container">
+                <a class="btn btn-default btn-round btn-lg btn-icon" href="vendor/delete.php?id=<?= $people[0] ?>" rel="tooltip" title="delete"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
