@@ -20,7 +20,7 @@ require_once 'config/connect.php';
   
     <hr class="new5">
     
-    <button class="open-button" onclick="openForm()"><img class="table_icon" src="img/add.png" alt="добавить контакт"></button>
+    
 
     <div class="form-popup" id="myForm">
       <form action="vendor/add.php" class="form-container" method="post">
@@ -35,19 +35,13 @@ require_once 'config/connect.php';
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
-    <script>
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
+
     <br><br>
     <table width="50%"  align="center">
         <tr>
-            <th>Имя</th>
+            <th>Имя
+            <button class="open-button" onclick="openForm()"><img class="table_icon" src="img/add.png" alt="добавить контакт"></button>
+            </th>
             <th>Номер</th>
         </tr>
 
@@ -65,5 +59,16 @@ require_once 'config/connect.php';
             }
         ?>
     </table>
+
+    <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
 </body>
 </html>
