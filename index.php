@@ -35,8 +35,7 @@ require_once 'config/connect.php';
         <tr>
             <th>Имя</th>
             <th>Номер</th>
-            <th>Изменить</th>
-            <th>Удалить</th>
+            <th>Редактирование</th>
         </tr>
 
         <?php
