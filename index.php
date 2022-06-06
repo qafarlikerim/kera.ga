@@ -35,6 +35,15 @@ require_once 'config/connect.php';
         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+    <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <br><br>
     <table width="50%"  align="center">
         <tr>
