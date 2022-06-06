@@ -24,7 +24,9 @@ require_once 'config/connect.php';
     <table width="50%"  align="center">
         <tr>
             <th>Имя
-            <button class="open-button" onclick="openForm()"><img src="img/add.png" alt="добавить контакт"></button>
+              <button class="open-button" onclick="openForm()">
+                <img class="img_add" src="img/add.png" alt="добавить контакт">
+              </button>
             </th>
             <th>Номер</th>
         </tr>
