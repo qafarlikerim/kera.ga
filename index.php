@@ -95,8 +95,10 @@ require_once 'config/connect.php';
                     <tr>
                         <td><?= $people[1] ?></td>
                         <td><?= $people[2] ?></td>
-                        <div><a class="btn btn-default btn-round btn-lg btn-icon" href="update.php?id=<?= $people[0] ?>" rel="tooltip" title="удалить"><i class=i class="fa fa-pencil-square-o" aria-hidden="true"></a></div>
-                        <div><a class="btn btn-default btn-round btn-lg btn-icon" href="vendor/delete.php?id=<?= $people[0] ?>" rel="tooltip" title="удалить"><i class="fa fa-trash" aria-hidden="true"></a></div>
+                        <div class="button-container">
+                        <a class="btn btn-default btn-round btn-lg btn-icon" href="update.php?id=<?= $people[0] ?>" rel="tooltip" title="удалить"><i class=i class="fa fa-pencil-square-o" aria-hidden="true"></a>
+                        <a class="btn btn-default btn-round btn-lg btn-icon" href="vendor/delete.php?id=<?= $people[0] ?>" rel="tooltip" title="удалить"><i class="fa fa-trash" aria-hidden="true"></a>
+                        </div>
                     </tr>
                 <?php
             }
