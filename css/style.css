@@ -75,8 +75,10 @@ td {
 .icon_range{
   background: none;
   width: 10%;
+  padding: 0px;
 }
 
 .table_icon{
   width: 49%;
+  margin: 2%;
 }
