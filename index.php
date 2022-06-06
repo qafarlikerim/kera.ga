@@ -83,8 +83,8 @@ require_once 'config/connect.php';
         <tr>
             <th>Имя</th>
             <th>Номер</th>
-            <th>Измененить Контакт</th>
-            <th>Удалить Контакт</th>
+            <th></th>
+            <th></th>
         </tr>
 
         <?php
