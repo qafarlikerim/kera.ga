@@ -64,7 +64,7 @@ require_once 'config/connect.php';
     }
 </style>
 <body>
-    <h2 class="red-text" style="color: red;" align="center" >Мы переехали на новый сайт --><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
+    <h2 class="red-text" style="color: red;" align="center" ><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
   
     <hr class="new5">
     
@@ -75,15 +75,12 @@ require_once 'config/connect.php';
         <br>
         <input type="number" name="number" id="number" placeholder="Введите номер контакта..." class="form-control">
         <br>
-        <input type="date" name="date" id="date" placeholder="Введите дату..." class="form-control">
-        <br>
         <button type="submit" name="sendTask" class="button button2">+</button>&nbsp;<button type="reset" name="sendTask" class="button button3">-</button>
       </form>  
     </div>
     <br><br>
     <table width="50%"  align="center">
         <tr>
-            <th>ID</th>
             <th>Имя</th>
             <th>Номер</th>
             <th>Дата</th>

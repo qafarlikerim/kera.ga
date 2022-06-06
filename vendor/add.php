@@ -15,20 +15,13 @@
     exit();
   }
 
-  $date = $_POST['date'];
-  if($date == '') {
-    echo('<div style="font-size: 30; font-weight: bold;">'.$rez['nazv']);
-    echo 'Введите дату...';
-    exit();
-  }
 
   require_once '../config/connect.php';
 
   $name = $_POST['name'];
   $number = $_POST['number'];
-  $date = $_POST['date'];
-  
-  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`, `number`, `date`) VALUES (NULL, '$name', '$number', '$date')");
+
+  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`, `number`) VALUES (NULL, '$name', '$number')");
 
   header('Location: /');
 ?>
