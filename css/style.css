@@ -9,8 +9,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 300px;
-  right: 300px;
+  bottom: 50%;
+  right: 50%;
   width: 20px;
 }
 
