@@ -64,11 +64,19 @@ td {
   background: #b5b5b5;
 }
 
+.name_range{
+  width: 65%;
+}
+
+.number_range{
+  width: 30%;
+}
+
 .icon_range{
   width: 5%;
 }
 
 .table_icon{
-  width: 30%;
-  margin: 3px;
+  width: 45%;
+  margin: 1px;
 }
