@@ -52,20 +52,6 @@ require_once 'config/connect.php';
     </table>
 
     <div class="form-popup" id="myForm">
-      <form action="vendor/add.php" class="form-container" method="post">
-    
-        <label for="name"><b>Контакт</b></label>
-        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
-    
-        <label for="number"><b>Номер</b></label>
-        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-    
-        <button type="submit" name="sendTask" class="btn">Добавить</button>
-        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
-      </form>
-    </div>
-
-    <div class="form-popup" id="myForm">
       <form action="vendor/update.php" class="form-container" method="post">
         <input type="hidden" name="id" value="<?= $people['id']?>">
     
