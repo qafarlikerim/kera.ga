@@ -28,12 +28,7 @@ require_once 'config/connect.php';
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
               </button>
             </th>
-            <th>Номер
-              <button class="open-button" onclick="openForm()">
-                <a href="update.php?id=<?= $people[0] ?>">
-                <img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить">
-              </button>
-            </th>
+            <th>Номер</th>
         </tr>
 
         <?php
@@ -44,7 +39,7 @@ require_once 'config/connect.php';
                     <tr>
                         <td class="name_range"><?= $people[1] ?></td>
                         <td class="number_range"><?= $people[2] ?></td>
-                        <td class="icon_range"><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
+                        <td class="icon_range"><a href="update.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
             }
@@ -52,16 +47,15 @@ require_once 'config/connect.php';
     </table>
 
     <div class="form-popup" id="myForm">
-      <form action="vendor/update.php" class="form-container" method="post">
-        <input type="hidden" name="id" value="<?= $people['id']?>">
+      <form action="vendor/add.php" class="form-container" method="post">
     
         <label for="name"><b>Контакт</b></label>
-        <input type="text" name="name" id="name" value="<?= $people['name'] ?>" required>
+        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
     
         <label for="number"><b>Номер</b></label>
-        <input type="number" name="number" id="number" value="<?= $people['number'] ?>" required>
+        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
     
-        <button type="submit" name="sendTask" class="btn">Обновить</button>
+        <button type="submit" name="sendTask" class="btn">Добавить</button>
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
