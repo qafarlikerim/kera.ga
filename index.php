@@ -65,7 +65,7 @@ require_once 'config/connect.php';
         document.getElementById("myForm").style.display = "block";
       }
       
-      function closeForn() {
+      function closeForm() {
         document.getElementById("myForm").style.display = "none";
       }
     </script>
