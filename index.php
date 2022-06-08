@@ -28,11 +28,7 @@ require_once 'config/connect.php';
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
               </button>
             </th>
-            <th>Номер
-              <button class="open-buttom" onclick="openForn()">
-                <img class="img_add" src="img/add.png" alt="добавить номер">
-              </button>    
-            </th>
+            <th>Номер</th>
         </tr>
 
         <?php
@@ -52,15 +48,18 @@ require_once 'config/connect.php';
 
     <div class="form-popup" id="myForm">
       <form action="vendor/add.php" class="form-container" method="post">
-      <input type="hidden" name="id">s
-      
+    
         <label for="name"><b>Контакт</b></label>
         <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
+    
+        <label for="number"><b>Номер</b></label>
+        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
     
         <button type="submit" name="sendTask" class="btn">Добавить</button>
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+
     <script>
     function openForm() {
         document.getElementById("myForm").style.display = "block";
@@ -68,27 +67,6 @@ require_once 'config/connect.php';
       
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
-      }
-    </script>
-
-    <div class="forn-popup" id="UnyForm">
-      <form action="vendor/add.php" class="form-container" method="post">
-
-        <label for="number"><b>Номер</b></label>
-        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-
-        <button type="submit" name="Task" class="btn">Добавить</button>
-        <button type="button" name="Task" class="btn cancel" onclick="closeForn()">Закрыть</button>
-      </form>
-    </div>
-
-    <script>
-    function openForn() {
-        document.getElementById("UnyForm").style.display = "block";
-      }
-      
-      function closeForn() {
-        document.getElementById("UnyForm").style.display = "none";
       }
     </script>
 

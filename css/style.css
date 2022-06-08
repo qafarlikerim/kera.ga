@@ -8,26 +8,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 
-.open-buttom {
-  background: none;
-  width: 20%;
-  border: none;
-  cursor: pointer;
-}
-
 .form-popup {
   display: none;
   position: fixed;
   bottom: 30%;
   right: 50%;
-  border: 3px solid #f1f1f1;
-}
-
-.forn-popup {
-  display: none;
-  position: fixed;
-  bottom: 30%;
-  right: 20%;
   border: 3px solid #f1f1f1;
 }
 
