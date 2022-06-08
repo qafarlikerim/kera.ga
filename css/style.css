@@ -8,13 +8,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 
-.open-buttom {
-  background: none;
-  width: 10%;
-  border: none;
-  cursor: pointer;
-}
-
 .form-popup {
   display: none;
   position: fixed;
@@ -23,21 +16,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: 3px solid #f1f1f1;
 }
 
-.unyform-popup {
-  display: none;
-  position: fixed;
-  bottom: 30%;
-  right: 20%;
-  border: 3px solid #f1f1f1;
-}
-
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-.forn-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;

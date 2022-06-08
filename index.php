@@ -29,7 +29,7 @@ require_once 'config/connect.php';
               </button>
             </th>
             <th>Номер
-              <button class="open-buttom" onclick="openForn()">
+              <button class="open-button" onclick="openForn()">
                 <img class="img_add" src="img/add.png" alt="добавить номер">
               </button>    
             </th>
@@ -70,8 +70,8 @@ require_once 'config/connect.php';
       }
     </script>
 
-    <div class="unyform-popup" id="UnyForm">
-      <form action="vendor/add.php" class="forn-container" method="post">
+    <div class="form-popup" id="UnyForm">
+      <form action="vendor/add.php" class="form-container" method="post">
 
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер..." name="number" id="number" required>
