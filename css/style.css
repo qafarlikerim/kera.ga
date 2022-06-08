@@ -8,7 +8,22 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 
+.open-buttom {
+  background: none;
+  width: 10%;
+  border: none;
+  cursor: pointer;
+}
+
 .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  right: 50%;
+  border: 3px solid #f1f1f1;
+}
+
+.unyform-popup {
   display: none;
   position: fixed;
   bottom: 30%;

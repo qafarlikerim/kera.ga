@@ -28,30 +28,10 @@ require_once 'config/connect.php';
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
               </button>
             </th>
-            <div class="form-popup" id="myForm">
-              <form action="vendor/add.php" class="form-container" method="post">
-
-                <label for="name"><b>Контакт</b></label>
-                <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
-
-                <button type="submit" class="btn">Добавить</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-              </form>
-            </div>
             <th>Номер
-            <button class="open-button" onclick="openForm()">
+            <button class="open-buttom" onclick="openForm()">
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
             </th>
-            <div class="form-popup" id="myForm">
-              <form action="vendor/add.php" class="form-container" method="post">
-              
-                <label for="number"><b>Номер</b></label>
-                <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-              
-                <button type="submit" class="btn">Добавить</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-              </form>
-            </div>
         </tr>
 
         <?php
@@ -69,6 +49,28 @@ require_once 'config/connect.php';
         ?>
     </table>
 
+    <div class="form-popup" id="myForm">
+      <form action="vendor/add.php" class="form-container" method="post">
+    
+        <label for="name"><b>Контакт</b></label>
+        <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
+    
+        <button type="submit" name="sendTask" class="btn">Добавить</button>
+        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+
+    <div class="unyform-popup" id="UnyForm">
+      <form action="vendor/add.php" class="form-container" method="post">
+
+        <label for="number"><b>Номер</b></label>
+        <input type="number" placeholder="Введите номер..." name="number" id="number" required>
+
+        <button type="submit" name="sendTask" class="btn">Добавить</button>
+        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+
     <script>
     function openForm() {
         document.getElementById("myForm").style.display = "block";
@@ -76,6 +78,16 @@ require_once 'config/connect.php';
       
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+    <script>
+    function openForm() {
+        document.getElementById("UnyForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("UnyForm").style.display = "none";
       }
     </script>
 
