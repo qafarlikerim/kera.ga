@@ -12,10 +12,15 @@
 
   require_once '../config/connect.php';
 
-  $name = $_POST['name'];
   $number = $_POST['number'];
 
-  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`, `number`) VALUES (NULL, '$name', '$number')");
+  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `number`) VALUES (NULL, '$number')");
+
+  header('Location: /');
+
+  $name = $_POST['name'];
+
+  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`) VALUES (NULL, '$name')");
 
   header('Location: /');
 ?>
