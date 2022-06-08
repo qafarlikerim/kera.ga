@@ -61,7 +61,7 @@ require_once 'config/connect.php';
       </form>
     </div>
     <script>
-    function openForn() {
+    function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
       
@@ -71,22 +71,22 @@ require_once 'config/connect.php';
     </script>
 
     <div class="unyform-popup" id="UnyForm">
-      <form action="vendor/add.php" class="form-container" method="post">
+      <form action="vendor/add.php" class="forn-container" method="post">
 
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер..." name="number" id="number" required>
 
-        <button type="submit" name="sendTask" class="btn">Добавить</button>
-        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
+        <button type="submit" name="Task" class="btn">Добавить</button>
+        <button type="button" name="Task" class="btn cancel" onclick="closeForn()">Закрыть</button>
       </form>
     </div>
 
     <script>
-    function openForm() {
+    function openForn() {
         document.getElementById("UnyForm").style.display = "block";
       }
       
-      function closeForm() {
+      function closeForn() {
         document.getElementById("UnyForm").style.display = "none";
       }
     </script>
