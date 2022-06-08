@@ -13,16 +13,9 @@
   require_once '../config/connect.php';
 
   $name = $_POST['name'];
-
-  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`) VALUES (NULL, '$name')");
-
-  header('Location: /');
-
-  require_once '../config/connect.php';
-
   $number = $_POST['number'];
 
-  mysqli_query($connect, query:"INSERT INTO `numbers` (`id`, `number`, `people_id`) VALUES (NULL, '$number', NULL)");
+  mysqli_query($connect, query:"INSERT INTO `people` (`id`, `name`, `number`) VALUES (NULL, '$name', '$number')");
 
   header('Location: /');
 ?>
