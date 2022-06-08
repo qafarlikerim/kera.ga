@@ -30,7 +30,7 @@ require_once 'config/connect.php';
             </th>
             <th>Номер
             <button class="open-buttom" onclick="openForm()">
-                <img class="img_add" src="img/add.png" alt="добавить контакт">
+                <img class="img_add" src="img/add.png" alt="добавить номер">
             </th>
         </tr>
 
