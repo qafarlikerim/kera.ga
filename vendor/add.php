@@ -14,7 +14,7 @@
 
   $number = $_POST['number'];
 
-  mysqli_query($connect, query:"INSERT INTO `numbers` (`id`, `number`, people_id) VALUES (NULL, '$number', )");
+  mysqli_query($connect, query:"INSERT INTO `numbers` (`id`, `number`, people_id) VALUES (NULL, '$number', '$id')");
 
   header('Location: /');
 

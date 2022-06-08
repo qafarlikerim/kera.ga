@@ -52,7 +52,8 @@ require_once 'config/connect.php';
 
     <div class="form-popup" id="myForm">
       <form action="vendor/add.php" class="form-container" method="post">
-    
+      <input type="hidden" name="id">s
+      
         <label for="name"><b>Контакт</b></label>
         <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
     
