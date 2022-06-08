@@ -29,8 +29,9 @@ require_once 'config/connect.php';
               </button>
             </th>
             <th>Номер
-            <button class="open-buttom" onclick="openForm()">
+              <button class="open-buttom" onclick="openForm()">
                 <img class="img_add" src="img/add.png" alt="добавить номер">
+              </button>    
             </th>
         </tr>
 
@@ -59,6 +60,15 @@ require_once 'config/connect.php';
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+    <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
 
     <div class="unyform-popup" id="UnyForm">
       <form action="vendor/add.php" class="form-container" method="post">
@@ -70,16 +80,6 @@ require_once 'config/connect.php';
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
-
-    <script>
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
 
     <script>
     function openForm() {
