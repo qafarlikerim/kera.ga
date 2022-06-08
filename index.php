@@ -24,11 +24,14 @@ require_once 'config/connect.php';
     <table width="50%"  align="center">
         <tr>
             <th>Имя
-              <button class="open-button" onclick="openForm()">
+              <button class="open-button" onclick="openForm()" name="sendTask">
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
               </button>
             </th>
-            <th>Номер</th>
+            <th>Номер
+            <button class="open-button" onclick="openForm()" name="Task">
+                <img class="img_add" src="img/add.png" alt="добавить контакт">
+            </th>
         </tr>
 
         <?php
@@ -46,17 +49,25 @@ require_once 'config/connect.php';
         ?>
     </table>
 
-    <div class="form-popup" id="myForm">
+    <div class="form-popup" id="myForm" name="sendTask">
       <form action="vendor/add.php" class="form-container" method="post">
     
         <label for="name"><b>Контакт</b></label>
         <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
     
+        <button type="submit" class="btn">Добавить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+
+    <div class="form-popup" id="myForm" name="Task">
+      <form action="vendor/add.php" class="form-container" method="post">
+
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер..." name="number" id="number" required>
-    
-        <button type="submit" name="sendTask" class="btn">Добавить</button>
-        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
+
+        <button type="submit" class="btn">Добавить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
 
