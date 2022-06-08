@@ -70,7 +70,7 @@ require_once 'config/connect.php';
       }
     </script>
 
-    <div class="form-popup" id="UnyForm">
+    <div class="forn-popup" id="UnyForm">
       <form action="vendor/add.php" class="form-container" method="post">
 
         <label for="number"><b>Номер</b></label>
