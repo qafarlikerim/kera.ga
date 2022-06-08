@@ -29,7 +29,7 @@ require_once 'config/connect.php';
               </button>
             </th>
             <th>Номер
-              <button class="open-button" onclick="openForn()">
+              <button class="open-buttom" onclick="openForn()">
                 <img class="img_add" src="img/add.png" alt="добавить номер">
               </button>    
             </th>
