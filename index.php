@@ -29,7 +29,7 @@ require_once 'config/connect.php';
               </button>
             </th>
             <th>Номер
-              <button class="open-buttom" onclick="openForm()">
+              <button class="open-buttom" onclick="openForn()">
                 <img class="img_add" src="img/add.png" alt="добавить номер">
               </button>    
             </th>
@@ -61,11 +61,11 @@ require_once 'config/connect.php';
       </form>
     </div>
     <script>
-    function openForm() {
+    function openForn() {
         document.getElementById("myForm").style.display = "block";
       }
       
-      function closeForm() {
+      function closeForn() {
         document.getElementById("myForm").style.display = "none";
       }
     </script>
