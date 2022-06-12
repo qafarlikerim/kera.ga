@@ -7,7 +7,7 @@
     $people = mysqli_fetch_assoc($people);
 ?>
 
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
