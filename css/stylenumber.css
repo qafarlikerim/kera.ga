@@ -1,0 +1,97 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background: none;
+  width: 10%;
+  border: none;
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  border: 3px solid #f1f1f1;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+hr.new5 {
+  border: 3px solid red;
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background: #606060;
+  color: #fff;
+}
+
+td {
+  background: #b5b5b5;
+}
+
+.name_range{
+  width: 60%;
+}
+
+.number_range{
+  width: 30%;
+}
+
+.icon_range{
+  background: none;
+  width: 10%;
+  padding: 0px;
+}
+
+.table_icon{
+  width: 48%;
+  margin: 1%;
+}
+
+.img_add{
+  background: none;
+  width: 100%;
+}
