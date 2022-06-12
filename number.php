@@ -43,7 +43,7 @@ require_once 'config/connect.php';
       <form action="vendor/add.php" class="form-container" method="post">
     
         <label for="number"><b>Номер</b></label>
-        <input type="text" placeholder="Введите имя контакта..." name="number" id="number" required>
+        <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
     
         <button type="submit" name="sendTask" class="btn">Добавить</button>
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
