@@ -28,7 +28,7 @@ require_once 'config/connect.php';
         <?php
             $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers`");
             $numbers = mysqli_fetch_all($numbers);
-            foreach ($people as $people) {
+            foreach ($numbers as $numbers) {
                 ?>
                     <tr>
                         <td class="name_range"><?= $numbers[1] ?></td>
