@@ -16,5 +16,5 @@
 
   mysqli_query($connect, query:"INSERT INTO `numbers` (`id`, `number`) VALUES (NULL, '$number')");
 
-  header('Location: /');
+  header('Location: ../number.php');
 ?>
