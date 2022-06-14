@@ -1,12 +1,12 @@
 .form-popup {
     position: fixed;
     bottom: 50%;
-    right: 60%;
+    right: 35%;
     border: 3px solid #4CAF50;
   }
 
 .form-container {
-    width: 82%;
+    width: 83%;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     text-align: center;
