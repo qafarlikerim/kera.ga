@@ -33,3 +33,7 @@
     cursor: pointer;
     width: 100%;
   }
+
+  .input{
+      width: 50%;
+  }
