@@ -2,6 +2,7 @@
     max-width: 300px;
     padding: 10px;
     background-color: white;
+    text-align: center;
   }
   
   .form-container input[type=text], .form-container input[type=number] {
@@ -26,12 +27,4 @@
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-  }
-  
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
   }
