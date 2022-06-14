@@ -28,9 +28,7 @@
   .form-container .btn {
     background-color: #4CAF50;
     color: white;
-    padding-bottom: 16px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 16px 30px;
     border: none;
     cursor: pointer;
     width: 100%;
