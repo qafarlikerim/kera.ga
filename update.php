@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/styleupdate.css">
 </head>
 <body>
-    <h3>Update Number</h3>
+    <h3 align="center">Update Number</h3>
     <div class="form-popup">
         <form action="vendor/update.php" class="form-container" method="post">
             <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
