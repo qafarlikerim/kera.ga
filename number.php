@@ -1,10 +1,7 @@
 <?php
 
-    require_once 'config/connect.php';
+require_once 'config/connect.php';
 
-    $numbers_id = $_GET['people_id'];
-    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `people_id` = '$numbers_id'");
-    $numbers = mysqli_fetch_assoc($numbers);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +14,6 @@
     <link rel="icon" href="/address_book.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/stylenumber.css">
-    <a href="https://kera.ga/"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="вернуться назад..." width="4%"></a>
   </head>
 <body>
     <table width="50%"  align="center">
@@ -45,7 +41,6 @@
 
     <div class="form-popup" id="myForm">
       <form action="vendor/addnumber.php" class="form-container" method="post">
-      <input type="hidden" name="id" value="<?= $numbers['people_id'] ?>">
     
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
