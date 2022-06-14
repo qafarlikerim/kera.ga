@@ -13,10 +13,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Update Number</title>
+    <link rel="stylesheet" href="css/stylenumber.css">
 </head>
 <body>
     <h3>Update Number</h3>
-    <form action="vendor/update.php" method="post">
+    <form action="vendor/update.php" class="form-container" method="post">
         <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
         <p>Number</p>
         <input type="number" name="number" value="<?= $numbers['number'] ?>">
