@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Update Number</title>
-    <link rel="stylesheet" href="css/stylenumber.css">
+    <link rel="stylesheet" href="css/styleupdate.css">
 </head>
 <body>
     <h3>Update Number</h3>
