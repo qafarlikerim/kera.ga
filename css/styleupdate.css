@@ -2,9 +2,5 @@
     max-width: 300px;
     padding: 10px;
     background-color: white;
-    display: none;
-    position: fixed;
-    bottom: 52%;
-    right: 50%;
-    border: 3px solid #f1f1f1;
+    
   }
