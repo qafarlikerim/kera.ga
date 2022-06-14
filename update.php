@@ -4,7 +4,7 @@
 
     $numbers_id = $_GET['id'];
     $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `id` = '$numbers_id'");
-    $numbers = mysqli_fetch_assoc($nymbers);
+    $numbers = mysqli_fetch_assoc($numbers);
 ?>
 
  
