@@ -17,13 +17,11 @@
 </head>
 <body>
     <h3>Update Number</h3>
-    <div  class="form-popup">
-        <form action="vendor/update.php" class="form-container" method="post">
-            <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
-            <p>Number</p>
-            <input type="number" name="number" value="<?= $numbers['number'] ?>">
-            <button type="submit" class="btn">Update</button>
-        </form>
-    </div>
+    <form action="vendor/update.php" class="form-container" method="post" align="center">
+        <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
+        <p>Number</p>
+        <input type="number" name="number" value="<?= $numbers['number'] ?>">
+        <button type="submit" class="btn">Update</button>
+    </form>
 </body>
 </html>
