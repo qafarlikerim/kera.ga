@@ -1,7 +1,10 @@
 <?php
 
-require_once 'config/connect.php';
+    require_once 'config/connect.php';
 
+    $numbers_id = $_GET['people_id'];
+    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `people_id` = '$numbers_id'");
+    $numbers = mysqli_fetch_assoc($numbers);
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +17,7 @@ require_once 'config/connect.php';
     <link rel="icon" href="/address_book.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/stylenumber.css">
+    <a href="https://kera.ga/"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="вернуться назад..." width="4%"></a>
   </head>
 <body>
     <table width="50%"  align="center">
@@ -31,7 +35,7 @@ require_once 'config/connect.php';
             foreach ($numbers as $numbers) {
                 ?>
                     <tr>
-                        <td class="name_range"><?= $numbers[1] ?></td>
+                        <td class="name_range"><?= $numbers['id'] ?></td>
                         <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/deletenumber.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
