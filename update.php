@@ -12,10 +12,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update Contact</title>
+    <title>Update Number</title>
 </head>
 <body>
-    <h3>Update Contact</h3>
+    <h3>Update Number</h3>
     <form action="vendor/update.php" method="post">
         <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
         <p>Number</p>
