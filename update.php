@@ -17,7 +17,7 @@
 </head>
 <body>
     <h3>Update Number</h3>
-    <div> class="form-popup"
+    <div  class="form-popup">
         <form action="vendor/update.php" class="form-container" method="post">
             <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
             <p>Number</p>
