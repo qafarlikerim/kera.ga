@@ -35,7 +35,7 @@
                 ?>
                     <tr>
                         <td class="name_range"><?= $people[2] ?></td>
-                        <td class="icon_range"><a href="update.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
+                        <td class="icon_range"><a href="update.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/deletenumber.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
             }
