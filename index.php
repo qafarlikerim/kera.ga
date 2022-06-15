@@ -38,7 +38,6 @@ require_once 'config/connect.php';
                 ?>
                     <tr>
                         <td class="name_range"><?= $people[1] ?></td>
-                        <td class="name_range"><?= $people[2] ?></td>
                         <td class="icon_range"><a href="number.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
