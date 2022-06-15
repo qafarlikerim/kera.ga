@@ -19,15 +19,12 @@
     <link rel="stylesheet" href="css/stylenumber.css">
   </head>
 <body>
-    <div class="form-popup" id="myForm">
       <form action="vendor/addnumber.php" class="form-container" method="post">
     
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер контакта..." name="number" id="number" value="<?= $people[2] ?>" required>
     
         <button type="submit" name="sendTask" class="btn">Добавить</button>
-        <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
-    </div>
 </body>
 </html>
