@@ -34,7 +34,7 @@
             foreach ($numbers as $numbers) {
                 ?>
                     <tr>
-                        <td class="name_range" value="<?= $numbers['number'] ?>"></td>
+                        <td class="name_range"><?= $numbers[1] ?></td>
                         <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/deletenumber.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
@@ -44,7 +44,6 @@
 
     <div class="form-popup" id="myForm">
       <form action="vendor/addnumber.php" class="form-container" method="post">
-        <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
     
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
