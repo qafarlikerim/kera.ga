@@ -29,7 +29,6 @@ require_once 'config/connect.php';
               </button>
             </th>
             <th>Номер</th>
-            <th></th>
         </tr>
 
         <?php
