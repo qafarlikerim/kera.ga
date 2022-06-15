@@ -43,7 +43,7 @@
     </table>
 
     <div class="form-popup" id="myForm">
-      <form action="vendor/add.php" class="form-container" method="post">
+      <form action="vendor/addnumber.php" class="form-container" method="post">
     
         <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
