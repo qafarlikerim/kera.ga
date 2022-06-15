@@ -2,9 +2,9 @@
 
     require_once 'config/connect.php';
 
-    $numbers_id = $_GET['id'];
-    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `id` = '$numbers_id'");
-    $numbers = mysqli_fetch_assoc($numbers);
+    $people_id = $_GET['id'];
+    $people = mysqli_query($connect, query:"SELECT * FROM `people` WHERE `id` = '$people_id'");
+    $people = mysqli_fetch_assoc($people);
 ?>
 
 <!DOCTYPE html>
@@ -29,13 +29,13 @@
         </tr>
 
         <?php
-            $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers`");
-            $numbers = mysqli_fetch_all($numbers);
-            foreach ($numbers as $numbers) {
+            $people = mysqli_query($connect, query:"SELECT * FROM `people`");
+            $people = mysqli_fetch_all($people);
+            foreach ($people as $people) {
                 ?>
                     <tr>
-                        <td class="name_range"><?= $numbers[1] ?></td>
-                        <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/deletenumber.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
+                        <td class="name_range"><?= $people[2] ?></td>
+                        <td class="icon_range"><a href="update.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="изменить" title="изменить"></a><a href="vendor/deletenumber.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
             }
