@@ -1,5 +1,6 @@
 <?php
 
+require_once 'config/connect.php';
     require_once 'config/connect.php';
 
     $numbers_id = $_GET['people_id'];
