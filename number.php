@@ -16,9 +16,7 @@ require_once 'config/connect.php';
     <link rel="stylesheet" href="css/stylenumber.css">
   </head>
 <body>
-    <h2 class="red-text" style="color: red;" align="center" ><a href="https://qkstudio.ml/">www.QkStudio.ml</a></h2>
-  
-    <hr class="new5">
+    <a href="https://kera.ga/"><img src="https://cdn.create.vista.com/api/media/medium/470867402/stock-vector-back-left-arrow-square-button?token=" title="вернуться назад..." width="4%"></a>
 
     <br><br>
     <table width="50%"  align="center">
