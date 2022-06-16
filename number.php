@@ -37,7 +37,7 @@ require_once 'config/connect.php';
                 ?>
                     <tr>
                         <td class="name_range"><?= $numbers[1] ?></td>
-                        <td class="icon_range"><a href="number.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
+                        <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
             }
@@ -47,7 +47,7 @@ require_once 'config/connect.php';
     <div class="form-popup" id="myForm">
       <form action="vendor/addnumber.php" class="form-container" method="post">
     
-        <label for="number"><b>Контакт</b></label>
+        <label for="number"><b>Номер</b></label>
         <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
     
         <button type="submit" name="sendTask" class="btn">Добавить</button>
