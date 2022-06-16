@@ -28,7 +28,6 @@ require_once 'config/connect.php';
                 <img class="img_add" src="img/add.png" alt="добавить контакт">
               </button>
             </th>
-            <th>Номер</th>
         </tr>
 
         <?php
@@ -38,8 +37,7 @@ require_once 'config/connect.php';
                 ?>
                     <tr>
                         <td class="name_range"><?= $people[1] ?></td>
-                        <td class="number_range"><?= $people[2] ?></td>
-                        <td class="icon_range"><a href="update.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
+                        <td class="icon_range"><a href="number.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $people[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
             }
@@ -51,9 +49,6 @@ require_once 'config/connect.php';
     
         <label for="name"><b>Контакт</b></label>
         <input type="text" placeholder="Введите имя контакта..." name="name" id="name" required>
-
-        <label for="name"><b>Номер</b></label>
-        <input type="number" placeholder="Введите номер контакта..." name="number" id="number" required>
     
         <button type="submit" name="sendTask" class="btn">Добавить</button>
         <button type="button" name="sendTask" class="btn cancel" onclick="closeForm()">Закрыть</button>
