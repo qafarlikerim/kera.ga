@@ -2,8 +2,8 @@
 
     require_once 'config/connect.php';
 
-    $numbers_id = $_GET['id'];
-    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `id` = '$numbers_id'");
+    $numbers_id = $_GET['people_id'];
+    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `people_id` = '$numbers_id'");
     $numbers = mysqli_fetch_assoc($numbers);
 ?>
 
@@ -19,7 +19,7 @@
     <h3 align="center">Update Number</h3>
     <div class="form-popup">
         <form action="vendor/update.php" class="form-container" method="post">
-            <input type="hidden" name="id" value="<?= $numbers['id'] ?>">
+            <input type="hidden" name="id" value="<?= $numbers['people_id'] ?>">
             <p>Number</p>
             <input type="number" name="number" value="<?= $numbers['number'] ?>">
             <button type="submit" class="btn">Update</button>
