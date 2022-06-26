@@ -1,13 +1,13 @@
 <?php
 
-    require_once 'config/connect.php';
+require_once 'config/connect.php';
 
     $numbers_id = $_GET['people_id'];
-    $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers` WHERE `people_id` = '$numbers_id'");
+    $numbers = mysqli_query($connect, query:"SELECT `number` FROM `numbers` WHERE `people_id` = '$numbers_id'");
     $numbers = mysqli_fetch_assoc($numbers);
 ?>
 
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

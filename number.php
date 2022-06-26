@@ -29,7 +29,7 @@ require_once 'config/connect.php';
         </tr>
 
         <?php
-            $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers`");
+            $numbers = mysqli_query($connect, query:"SELECT `number` FROM `numbers` WHERE `people_id` = 1");
             $numbers = mysqli_fetch_all($numbers);
             foreach ($numbers as $numbers) {
                 ?>
