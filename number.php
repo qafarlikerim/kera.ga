@@ -34,7 +34,7 @@ require_once 'config/connect.php';
             foreach ($numbers as $numbers) {
                 ?>
                     <tr>
-                        <td class="name_range"><?= $numbers[1] ?></td>
+                        <td class="name_range"><?= $numbers[3] ?></td>
                         <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
