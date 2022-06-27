@@ -29,12 +29,13 @@ require_once 'config/connect.php';
         </tr>
 
         <?php
-            $numbers = mysqli_query($connect, query:"SELECT * FROM `numbers`");
+            $numbers_id = $_GET['people_id'];
+            $numbers = mysqli_query($connect, query:"SELECT `number` FROM `numbers` WHERE `people_id` = '$numbers_id'");
             $numbers = mysqli_fetch_all($numbers);
             foreach ($numbers as $numbers) {
                 ?>
                     <tr>
-                        <td class="name_range"><?= $numbers[3] ?></td>
+                        <td class="name_range"><?= $numbers['number'] ?></td>
                         <td class="icon_range"><a href="update.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/edit-icon.png" alt="номер" title="номер"></a><a href="vendor/delete.php?id=<?= $numbers[0] ?>"><img class="table_icon" src="img/delete.png" alt="удалить" title="удалить"></a></td>
                     </tr>
                 <?php
