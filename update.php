@@ -17,13 +17,19 @@ require_once 'config/connect.php';
 </head>
 <body>
     <h3 align="center">Update Number</h3>
+    <tr>
     <div class="form-popup">
         <form action="vendor/update.php" class="form-container" method="post">
+            <td>
             <input type="hidden" name="id" value="<?= $numbers['people_id'] ?>">
+            </td>
+            <td>
             <p>Number</p>
             <input type="number" name="number" value="<?= $numbers['number'] ?>">
+            </td>
             <button type="submit" class="btn">Update</button>
         </form>
     </div>
+    </tr>
 </body>
 </html>
